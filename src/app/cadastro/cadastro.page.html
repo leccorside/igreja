@@ -1,0 +1,36 @@
+<div class="login">
+
+  <ion-icon (click)="voltar()" name="arrow-back-outline" class="voltar"></ion-icon>
+
+  <div class="container">
+
+    <div class="logo">
+      <img src="../../assets/images/logo3.png">
+    </div>
+
+    <div class="intro">
+      <p (click)="esqueci()">Cadastre-se agora!</p>
+    </div>
+
+    <div class="btns">
+      <ion-input placeholder="Nome" [(ngModel)]="nome" class="input"></ion-input>
+      <ion-input placeholder="E-mail" [(ngModel)]="email" class="input"></ion-input>
+      <ion-input placeholder="Telefone" [(ngModel)]="telefone" class="input" onkeypress="mascara(this, telefone2)" maxlength="15"></ion-input>
+      <ion-input placeholder="Senha" [(ngModel)]="senha" class="input"></ion-input>
+      <ion-input placeholder="Código da igreja" [(ngModel)]="codigo" class="input"></ion-input>
+    
+      <ion-button (click)="cadastrar()" id="btncad" shape="round" expand="full" color="primary" class="btn2">
+        <div id="spinner3" class="hidden">
+          <div class="spinner-border text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+				<span id="cadastrar" class="block">Cadastrar</span>
+      </ion-button>
+    </div>
+
+    
+
+  </div>
+
+</div>

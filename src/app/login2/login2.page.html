@@ -1,0 +1,33 @@
+<div class="login">
+
+  <ion-icon (click)="voltar()" name="arrow-back-outline" class="voltar"></ion-icon>
+
+  <div class="container">
+
+    <div class="logo">
+      <img src="../../assets/images/logo3.png">
+    </div>
+
+    <div class="intro">
+      <p (click)="esqueci()">Entre com seus dados</p>
+    </div>
+
+    <div class="btns">
+      <ion-input placeholder="E-mail" [(ngModel)]="email" class="input"></ion-input>
+      <ion-input placeholder="Senha" [(ngModel)]="senha" class="input"></ion-input>
+
+      <ion-button (click)="login()" id="btncad" shape="round" expand="full" color="primary" class="btn2">
+        <div id="spinner3" class="hidden">
+          <div class="spinner-border text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+				<span id="login" class="block">Login</span>
+      </ion-button>
+    </div>
+
+    <p class="p-esqueci" (click)="esqueci()">Esqueci minha senha</p>
+
+  </div>
+
+</div>

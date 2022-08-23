@@ -1,0 +1,31 @@
+<div class="login">
+
+  <ion-icon (click)="voltar()" name="arrow-back-outline" class="voltar"></ion-icon>
+
+  <div class="container">
+
+    <div class="logo">
+      <img src="../../assets/images/logo3.png">
+    </div>
+
+    <div class="intro">
+      <p (click)="esqueci()">Insira seu e-mail para receber uma senha provisória</p>
+    </div>
+
+    <div class="btns">
+      <ion-input placeholder="E-mail" class="input"></ion-input>
+
+      <ion-button (click)="recuperar()" id="btncad" shape="round" expand="full" color="primary" class="btn2">
+        <div id="spinner3" class="hidden">
+          <div class="spinner-border text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+				<span id="recuperar" class="block">Recuperar</span>
+      </ion-button>
+
+    </div>
+
+  </div>
+
+</div>
